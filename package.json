@@ -27,10 +27,12 @@
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
-    "@nomiclabs/hardhat-etherscan": "^2.1.1",
+    "@nomiclabs/hardhat-etherscan": "^2.1.4",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@typechain/ethers-v5": "^4.0.0",
     "@types/chai": "^4.2.6",
@@ -39,7 +41,8 @@
     "decimal.js": "^10.2.1",
     "ethereum-waffle": "^3.0.2",
     "ethers": "^5.0.8",
-    "hardhat": "^2.2.0",
+    "hardhat": "^2.4.3",
+    "hardhat-ethers": "^1.0.1",
     "hardhat-typechain": "^0.3.5",
     "mocha": "^6.2.2",
     "mocha-chai-jest-snapshot": "^1.1.0",
@@ -48,9 +51,9 @@
     "solhint": "^3.2.1",
     "solhint-plugin-prettier": "^0.0.5",
     "ts-generator": "^0.1.1",
-    "ts-node": "^8.5.4",
-    "typechain": "^4.0.0",
-    "typescript": "^3.7.3"
+    "ts-node": "^8.10.2",
+    "typechain": "^4.0.3",
+    "typescript": "^3.9.10"
   },
   "scripts": {
     "compile": "hardhat compile",

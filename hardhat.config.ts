@@ -3,10 +3,21 @@ import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle'
 import '@nomiclabs/hardhat-etherscan'
 
+require('dotenv').config();
+
+// const { API_URL, PRIVATE_KEY } = process.env;
+
+// const privateKeyDev = 'ad11d985d161eacf35d867fa13f389fcc98bae1a3116496e1a8d130dca950890'
+
 export default {
   networks: {
     hardhat: {
       allowUnlimitedContractSize: false,
+    },
+    uzheth: {
+      url: process.env.API_URL,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+      chainId: 702,
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
