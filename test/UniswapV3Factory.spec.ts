@@ -9,8 +9,8 @@ import { FeeAmount, getCreate2Address, TICK_SPACINGS } from './shared/utilities'
 const { constants } = ethers
 
 const TEST_ADDRESSES: [string, string] = [
-  '0x1000000000000000000000000000000000000000',
-  '0x2000000000000000000000000000000000000000',
+  '0x049C4147D89fC933a101100a70e641DeB0ce396e',
+  '0xfE09094522bF314E8BC57Db3304811BaD59DEc79',
 ]
 
 const createFixtureLoader = waffle.createFixtureLoader
